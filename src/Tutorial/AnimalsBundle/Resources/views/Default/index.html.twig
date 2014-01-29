@@ -1,1 +1,8 @@
-Hello!
+{% extends "::base.html.twig" %}
+
+{% block body %}
+<h1>All the animals</h1>
+	{% for animal in animals %}
+		<h2>{{ animal.title }}</h2>
+	{% endfor %}
+{% endblock %}
