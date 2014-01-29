@@ -18,7 +18,6 @@ class AnimalType extends AbstractType
             ->add('title')
             ->add('description')
             ->add('url')
-            ->add('date')
         ;
     }
     
