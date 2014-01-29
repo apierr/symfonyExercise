@@ -42,6 +42,12 @@ class Animal
      */
     private $url;
 
+    /**
+     * @var DateTime
+     *
+     * @ORM\Column(name="date", type="datetime")
+     */
+    private $date;
 
     /**
      * Get id
