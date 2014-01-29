@@ -1,1 +1,17 @@
-Hello!
+{% extends "::base.html.twig" %}
+
+{% block body %}
+<h1>All the animals</h1>
+	{% for animal in animals %}
+		<article>
+			<header>
+				<h2>{{ animal.title }}</h2>
+				<time>{{ animal.date|date('d M y')}}</time>
+			</header>
+			<div class="content">
+				<img src="{{ animal.url }}" alt="{{ animal.title }}">
+				<p>{{ animal.description }}</p>
+			</div>
+		</article>
+	{% endfor %}
+{% endblock %}

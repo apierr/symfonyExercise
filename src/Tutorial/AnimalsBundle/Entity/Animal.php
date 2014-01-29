@@ -31,7 +31,7 @@ class Animal
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="text")
+     * @ORM\Column(name="description", type="text", nullable=true)
      */
     private $description;
 
@@ -48,6 +48,11 @@ class Animal
      * @ORM\Column(name="date", type="datetime")
      */
     private $date;
+
+    function __construct()
+    {
+        $this->date = new \DateTime();
+    }
 
     /**
      * Get id
