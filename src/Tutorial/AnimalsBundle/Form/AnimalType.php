@@ -17,7 +17,7 @@ class AnimalType extends AbstractType
         $builder
             ->add('title')
             ->add('description')
-            ->add('url')
+            ->add('url', 'url')
         ;
     }
     
