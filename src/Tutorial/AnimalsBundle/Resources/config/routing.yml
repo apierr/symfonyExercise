@@ -1,3 +1,7 @@
 tutorial_animals_homepage:
-    pattern:  /hello/{name}
+    pattern:  /
     defaults: { _controller: TutorialAnimalsBundle:Default:index }
+
+tutorial_animals_add:
+    pattern:  /add
+    defaults: { _controller: TutorialAnimalsBundle:Default:add }
