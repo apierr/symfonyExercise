@@ -127,4 +127,27 @@ class Animal
     {
         return $this->url;
     }
+
+    /**
+     * Set date
+     *
+     * @param \DateTime $date
+     * @return Animal
+     */
+    public function setDate($date)
+    {
+        $this->date = $date;
+
+        return $this;
+    }
+
+    /**
+     * Get date
+     *
+     * @return \DateTime
+     */
+    public function getDate()
+    {
+        return $this->date;
+    }
 }
