@@ -21,7 +21,8 @@ class DefaultController extends Controller
     public function addAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $form = $this->createForm(new AnimalType());
+        $animal = new Animal();
+        $form = $this->createForm(new AnimalType(), $animal);
 
         return $this->render('TutorialAnimalsBundle:Default:add.html.twig', array(
             'form' => $form->createView(),

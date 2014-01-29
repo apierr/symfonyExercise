@@ -49,6 +49,11 @@ class Animal
      */
     private $date;
 
+    function __construct()
+    {
+        $this->date = new \DateTime();
+    }
+
     /**
      * Get id
      *
