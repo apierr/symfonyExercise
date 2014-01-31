@@ -1,4 +1,8 @@
-tutorial_animals:
-    resource: "@TutorialAnimalsBundle/Resources/config/routing.yml"
-    prefix:   /
+# tutorial_animals:
+#     resource: "@TutorialAnimalsBundle/Resources/config/routing.yml"
+#     prefix:   /
 
+tutorial_animals:
+    type: rest
+    resource: Tutorial\AnimalsBundle\Controller\PageController
+    prefix:  api_1_

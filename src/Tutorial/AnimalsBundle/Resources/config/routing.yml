@@ -5,3 +5,9 @@ tutorial_animals_homepage:
 tutorial_animals_add:
     pattern:  /add
     defaults: { _controller: TutorialAnimalsBundle:Default:add }
+
+tutorial_animals_Page:
+    type: rest
+    prefix: /v1
+    resource: "Tutorial\AnimalsBundle\Controller\PageController"
+    name_prefix:  api_1_ # naming collision
