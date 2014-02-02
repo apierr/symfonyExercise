@@ -1,5 +1,8 @@
 {% extends "::base.html.twig" %}
 
+{% block title %}I ovveridden the title {% endblock %}
+
 {% block body %}
     <h1>Hello {{ name }}!</h1>
+    {% include('AcmeDemoBundle:Demo:SubTemplates/stuff.html.twig') %}
 {% endblock %}
