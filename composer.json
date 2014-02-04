@@ -6,6 +6,24 @@
     "autoload": {
         "psr-0": { "": "src/" }
     },
+    "repositories": [
+        {
+           "type": "package",
+           "package": {
+               "version": "2.2.1",
+               "name": "twitter/bootstrap",
+               "source": {
+                   "url": "https://github.com/twitter/bootstrap.git",
+                   "type": "git",
+                   "reference": "master"
+               },
+               "dist": {
+                   "url": "https://github.com/twitter/bootstrap/zipball/master",
+                   "type": "zip"
+               }
+           }
+        }
+    ],
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "2.3.*",
@@ -18,7 +36,10 @@
         "sensio/distribution-bundle": "2.3.*",
         "sensio/framework-extra-bundle": "2.3.*",
         "sensio/generator-bundle": "2.3.*",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "~2.0",
+        "leafo/lessphp": "0.4.0",
+        "twitter/bootstrap": "2.3.2",
+        "components/jquery": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
