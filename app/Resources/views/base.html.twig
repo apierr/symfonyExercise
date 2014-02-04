@@ -3,11 +3,19 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+             <link href="{{ asset('bundles/acmedemo/css/myStyle.css') }}" rel="stylesheet" />
+             {% stylesheets '@bootstrap_less' combine=true %}  
+                <link href="{{ asset_url }}" type="text/css" rel="stylesheet"> 
+             {% endstylesheets %}
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script src="{{ asset('bundles/acmedemo/js/example.js') }}"></script>
+        {% endblock %}
     </body>
 </html>
