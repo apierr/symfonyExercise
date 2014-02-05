@@ -2,16 +2,18 @@
 
 {% block body %}
 <h1>All the animals</h1>
-	{% for animal in animals %}
-		<article>
-			<header>
-				<h2>{{ animal.title }}</h2>
-				<time>{{ animal.date|date('d M y')}}</time>
-			</header>
-			<div class="content">
-				<img src="{{ animal.url }}" alt="{{ animal.title }}">
-				<p>{{ animal.description }}</p>
-			</div>
-		</article>
-	{% endfor %}
+	<table class="table table-hover">
+		{% for animal in animals %}
+			<tr>
+				<td>
+					<h2>{{ animal.title }}</h2>
+					<time>{{ animal.date|date('d M y')}}</time>
+				</td>
+				<td>
+					<img src="{{ animal.url }}" alt="{{ animal.title }}">
+					<p>{{ animal.description }}</p>
+				</td>
+			</tr>
+		{% endfor %}
+	</table>
 {% endblock %}
