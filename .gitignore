@@ -1,3 +1,7 @@
+web/assetic/
+web/css/
+components/
+app/Resources/java/
 /web/bundles/
 /app/bootstrap.php.cache
 /app/cache/*
