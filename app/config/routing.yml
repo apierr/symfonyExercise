@@ -1,3 +1,7 @@
+acme_book:
+    resource: "@AcmeBookBundle/Resources/config/routing.yml"
+    prefix:   /
+
 tutorial_animals:
     resource: "@TutorialAnimalsBundle/Resources/config/routing.yml"
     prefix:   /
